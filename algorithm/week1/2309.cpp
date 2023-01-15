@@ -16,7 +16,7 @@ using namespace std;
 
 해설 : 9명의 난쟁이 중 7명을 골라 뜻은  중복 x, 순서 x 조합을 구하라는 것이다.
        재귀 방식으로 구하여 오름차순하여 출력한다.
-*/
+
 
 vector<int> nList;
 vector<int> result;
@@ -71,3 +71,4 @@ int main(void)
 
     combi(-1);
 }
+*/
