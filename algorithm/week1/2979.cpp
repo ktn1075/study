@@ -29,61 +29,36 @@ A B C
 0                          1
 0                          1
                           1
- */
+ 
 
-
+#include<stdio.h>
 #include<iostream>
-#include<string>
-
-
 using namespace std;
 
-
-int result[3][100];
 int main(void)
 {
-	int a, b, c;
-	cin >> a >> b >> c;
 	int sum = 0;
+	int a, b, c;
+	int count[104] = { 0 };
+	int aa = 0;
+	int bb = 0;
 
-	int x, y;
-	cin >> x >> y;
-
-	for (int i = x - 1; x < y-2; x++)
+	cin >> a >> b >> c;
+	
+	for (int i = 0; i < 3; i++)
 	{
-		result[0][x] = 1;
+		cin >> aa >> bb;
+		for (int j = aa; j < bb; j++) count[j]++;
 	}
-	cin >> x >> y;
-
-	for (int i = x - 1; x < y - 2; x++)
-	{
-		result[1][x] = 1;
-	}
-
-	cin >> x >> y;
-	for (int i = x - 1; x < y - 2; x++)
-	{
-		result[2][x] = 1;
-	}
-
 
 	for (int i = 0; i < 100; i++)
 	{
-		int temp = 0;
-
-		for (int j = 0; j < 3; j++)
-		{
-			cout << result[j][i];
-			temp += result[j][i];
-		}
-
-
-		switch (temp)
+		switch (count[i])
 		{
 		case 1:
-			sum += a * 1;
+			sum += a;
 			break;
-		case 2: 
+		case 2:
 			sum += b * 2;
 			break;
 		case 3:
@@ -91,6 +66,7 @@ int main(void)
 			break;
 		}
 	}
-
-	cout << sum << "\n";
+	cout << sum;
 }
+
+*/
