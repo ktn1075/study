@@ -9,7 +9,7 @@
    - [`API 정복 1,2`]
    - [`코딩테스트를 위한 자료구조와 알고리즘 with C++`]
    - [`STL 14 철저입문`]
-   - [`제프리 리처의 WINDOWS VIA C/C++`](https://github.com/ktn1075/Study/tree/master/WinAPI)
+   - [`제프리 리처의 WINDOWS VIA C/C++`]
 <br>
 
 ### 💻 온라인강의
