@@ -7,7 +7,7 @@
 	¹®ÀÚ 
 
 
-*/
+
 #include<vector>
 #include<iostream>
 #include<map>
@@ -15,16 +15,17 @@
 #include<array>
 
 using namespace std;
+string _list2[100004];
 
 int main(void)
 {
 	ios_base::sync_with_stdio(false);
 	cin.tie(NULL); cout.tie(NULL);
+
 	int n, k, m;
 	cin >> n >> k;
 
 	map<string, int> _list;
-	map<int, string> _list2;
 
 	for (int i = 0; i < n; i++)
 	{
@@ -32,7 +33,7 @@ int main(void)
 		cin >> temp;
 
 		_list.insert({ temp,i + 1 });
-		_list2.insert({ i + 1 , temp});
+		_list2[i + 1] = temp;
 	}
 
 // ==	stoi();
@@ -54,3 +55,4 @@ int main(void)
 	}
 
 }
+*/
