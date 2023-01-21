@@ -1,3 +1,4 @@
+/*
 #include<iostream>
 #include<map>
 #include<algorithm>
@@ -50,3 +51,4 @@ int main(void)
 		cout << sum - 1 << "\n";
 	}
 }
+*/
