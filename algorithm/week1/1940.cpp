@@ -24,9 +24,9 @@ void combi(int start)
 		return;
 	}
 
-	for (int i = start; i <o; i++)
+	for (int i = start+1; i <=o; i++)
 	{
-		x1.push_back(x[i+1]);
+		x1.push_back(x[i]);
 		combi(i);
 		x1.pop_back();
 	}
