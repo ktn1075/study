@@ -1,3 +1,4 @@
+/*
 #include<iostream>
 #include<string>
 #include<vector>
@@ -47,4 +48,4 @@ int main(void)
 
 	combi(0);
 	cout << count2 << "\n";
-}
+}*/
