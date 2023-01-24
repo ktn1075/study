@@ -13,20 +13,22 @@ int dx[4] = { 0, 1, 0, -1 };
 int n, m, a[max_n][max_n], visited[max_n][max_n], y, x;
 int countx = 0;
 
-void jaegi(int index1, int index2)
-{   
-    countx++;
-    visited[index1][index2] = true;
 
+void jaegi(int index1, int index2)
+{
+    visited[index1][index2] = true;
     for (int i = 0; i < 4; i++)
     {
         int ny = index1 + dy[i];
         int nx = index2 + dx[i];
         if (ny < 0 || ny >= m || nx < 0 || nx >= n || a[ny][nx] == 0) continue;
-        if (visited[ny][nx]) continue;
-        jaegi(ny, nx);
+        if (!visited[ny][nx] && a[ny][nx] == 1)
+        {
+            jaegi(ny, nx);
+        }
     }
 }
+
 int main() {
 
 
@@ -35,23 +37,31 @@ int main() {
 
     for (int i = 0; i < oo; i++)
     {
+        countx = 0;
+        fill(&a[0][0], &a[0][0] + 55*55,0);
+        fill(&visited[0][0], &visited[0][0] + 55 * 55, 0);
+        
         cin >> n >> m >> o2;
         for (int j = 0; j < o2; j++)
         {
             int temp1, temp2;
             cin >> temp1 >> temp2;
-            a[temp1][temp2] = 1;
+            a[temp2][temp1] = 1;
         }
 
         for (int k = 0; k < m; k++)
         {
             for (int k1 = 0; k1 < n; k1++)
             {
-               if(visited[k][k1] == 0 && a[k][k1] == 1 ) jaegi(k,k1);
+                if (!visited[k][k1]&& a[k][k1] == 1) {
+                    jaegi(k, k1);
+                    countx++;
+                }
             }
         }
 
         cout << countx << "\n";
+        countx = 0;
     }
 
     return 0;
