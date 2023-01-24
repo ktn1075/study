@@ -4,7 +4,7 @@
 #include<cstdio>
 #include<stdio.h>
 
-
+/*
 using namespace std;
 
 const int max_n = 104;
@@ -44,3 +44,5 @@ int main() {
 
     return 0;
 }
+
+*/
