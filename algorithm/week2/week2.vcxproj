@@ -152,6 +152,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="1012.cpp" />
+    <ClCompile Include="1992.cpp" />
     <ClCompile Include="2178.cpp" />
     <ClCompile Include="2468.cpp" />
     <ClCompile Include="2583.cpp" />
