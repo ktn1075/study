@@ -5,37 +5,32 @@ using namespace std;
 int main(void)
 {
 
-	
 
 	int n, m, countx;
 	int location = 1;
-	int ret = 0;
+	int ret = 0 , si = 0;
 	cin >> n >> m >> countx;
 
 	for (int i = 0; i < countx; i++)
 	{
+		si = location + m - 1;
 		int temp;
 		cin >> temp;
 
-		if (location == temp)
-		{
-			ret++;
-			continue;
-		}
+		if (temp >= location && temp <= si) continue;
 
-		while (true)
+		else
 		{
-			if (location < temp)
+			if (temp < location)
 			{
-				if (location <= temp && temp <= location + m - 1) break;				
-				location++;
+				ret += (location - temp);
+				location = temp;
 			}
-			else
-			{
-				if (location -m+1 <= temp && temp <= location) break;
-				location--;
+			else {
+				location += (temp - si);
+				ret += (temp - si);
 			}
-			ret++;
+
 		}
 	}
 	
