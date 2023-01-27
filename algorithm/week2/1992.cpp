@@ -1,3 +1,4 @@
+/*
 #include<iostream>
 #include<string>
 using namespace std;
@@ -49,3 +50,4 @@ int main(void)
 
 	cout << quard(0, 0, n) << '\n';
 }
+*/

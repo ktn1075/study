@@ -1,70 +1,67 @@
 /*
-#include<queue>
-#include <iostream>
-#include <tuple>
-#include<cstdio>
-#include<stdio.h>
-
+#include<iostream>
+#include<algorithm>
 
 using namespace std;
 
-const int max_n = 55;
-int dy[4] = { -1, 0, 1, 0 };
-int dx[4] = { 0, 1, 0, -1 };
-int n, m, a[max_n][max_n], visited[max_n][max_n], y, x;
-int countx = 0;
+int a[55][55], visit[55][55];
 
+int dx[4] = { 0,1,0,-1 };
+int dy[4] = { -1,0,1,0 };
+int n, m;
 
-void jaegi(int index1, int index2)
+void dfs(int y, int x)
 {
-    visited[index1][index2] = true;
-    for (int i = 0; i < 4; i++)
-    {
-        int ny = index1 + dy[i];
-        int nx = index2 + dx[i];
-        if (ny < 0 || ny >= m || nx < 0 || nx >= n || a[ny][nx] == 0) continue;
-        if (!visited[ny][nx] && a[ny][nx] == 1)
-        {
-            jaegi(ny, nx);
-        }
-    }
+	visit[y][x] = true;
+
+	for (int i = 0; i < 4; i++)
+	{
+		int nx = x + dx[i];
+		int ny = y + dy[i];
+
+		if (nx < 0 || ny < 0 || nx >= m || ny >= n) continue;
+		if (!visit[ny][nx] && a[ny][nx]) dfs(ny, nx);
+	}
 }
 
-int main() {
 
+int main(void)
+{
+	int ret = 0;
+	int g;
+	cin >> g;
 
-    int oo, o2;
-    cin >> oo;
+	for (int i = 0; i < g; i++)
+	{
 
-    for (int i = 0; i < oo; i++)
-    {
-        countx = 0;
-        fill(&a[0][0], &a[0][0] + 55*55,0);
-        fill(&visited[0][0], &visited[0][0] + 55 * 55, 0);
-        
-        cin >> n >> m >> o2;
-        for (int j = 0; j < o2; j++)
-        {
-            int temp1, temp2;
-            cin >> temp1 >> temp2;
-            a[temp2][temp1] = 1;
-        }
+		ret = 0;
+		fill(&a[0][0], &a[0][0] + 55 * 55, 0);
+		fill(&visit[0][0], &visit[0][0] + 55 * 55, 0);
+		int temp;
 
-        for (int k = 0; k < m; k++)
-        {
-            for (int k1 = 0; k1 < n; k1++)
-            {
-                if (!visited[k][k1]&& a[k][k1] == 1) {
-                    jaegi(k, k1);
-                    countx++;
-                }
-            }
-        }
+		cin >> m >> n >> temp;
 
-        cout << countx << "\n";
-        countx = 0;
-    }
+		for (int j = 0; j < temp; j++)
+		{
+			int q1, q2;
+			cin >> q1 >> q2;
+			a[q2][q1] = 1;
+		}
 
-    return 0;
+		for (int j = 0; j < n; j++)
+		{
+			for (int j2 = 0; j2 < m; j2++)
+			{
+				if (a[j][j2] && !visit[j][j2])
+				{
+					dfs(j, j2);
+					ret++;
+				}
+			}
+		}
+
+		cout << ret << "\n";
+	}
 }
+
 */
