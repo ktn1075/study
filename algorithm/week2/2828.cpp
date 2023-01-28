@@ -4,8 +4,6 @@ using namespace std;
 
 int main(void)
 {
-
-
 	int n, m, countx;
 	int location = 1;
 	int ret = 0 , si = 0;
@@ -30,7 +28,6 @@ int main(void)
 				location += (temp - si);
 				ret += (temp - si);
 			}
-
 		}
 	}
 	
