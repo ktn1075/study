@@ -1,3 +1,4 @@
+/*
 #include<iostream>
 #include<map>
 #include<algorithm>
@@ -56,3 +57,4 @@ int main(void)
 	}
 
 }
+*/
