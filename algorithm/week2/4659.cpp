@@ -1,10 +1,8 @@
+/*
 #include<iostream>
 #include<string>
 
 using namespace std;
-
-char l[5] = { 'a','e','i','o','u' };
-
 
 int main(void)
 {
@@ -81,3 +79,5 @@ int main(void)
 	}
 
 }
+
+*/
