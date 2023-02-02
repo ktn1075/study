@@ -17,3 +17,12 @@
    - [`인프런 : C++과 언리얼로 만드는 MMORPG 게임 개발 시리즈 PART3 - 자료구조와 알고리즘`]
 <br>
 
+
+### 📝 토이프로젝트
+   - [`ImageTagParsingServer`](https://github.com/ktn1075/study/tree/main/algorithm)
+   - [`무결성 검사 프로그램`](https://github.com/ktn1075/study/tree/main/algorithm)
+   - [`통합로그솔루션`](https://github.com/ktn1075/study/tree/main/algorithm)
+   - [`랜섬웨어 정상동작 검증 솔루션`](https://github.com/ktn1075/study/tree/main/algorithm)
+   - [`하우리 백신 C++ 포팅`](https://github.com/ktn1075/study/tree/main/algorithm)
+
+
