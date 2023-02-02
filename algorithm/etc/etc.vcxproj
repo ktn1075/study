@@ -141,6 +141,7 @@
   <ItemGroup>
     <ClCompile Include="001.cpp" />
     <ClCompile Include="MakeStack.cpp" />
+    <ClCompile Include="rookcpp.cpp" />
     <ClCompile Include="vps.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
