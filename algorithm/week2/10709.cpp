@@ -1,6 +1,5 @@
+/*
 #include<iostream>
-
-
 using namespace std;
 
 int a[105][105] = {-1};
@@ -41,3 +40,8 @@ int main(void)
 		cout << "\n";
 	}
 }
+*/
+
+
+
+
