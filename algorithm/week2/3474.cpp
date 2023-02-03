@@ -1,3 +1,4 @@
+/*
 #include<iostream>
 #include<algorithm>
 #include<vector>
@@ -31,5 +32,5 @@ int main(void)
 		}
 		cout << count2 << "\n";
 	}
-
 }
+*/
