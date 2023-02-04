@@ -1,3 +1,4 @@
+/*
 #include<iostream>
 #include<string>
 using namespace std;
@@ -12,8 +13,7 @@ int main(void)
 	for (int i = 666; ; i++)
 	{
 		string temp = to_string(i);
-		if (temp.find("666") != string::npos)
-			count++;
+		if (temp.find("666") != string::npos) count++;
 		if (count == x1)
 		{
 			cout << temp;
@@ -21,3 +21,5 @@ int main(void)
 		}
 	}
 }
+
+*/
