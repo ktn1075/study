@@ -1,53 +1,57 @@
 #include<iostream>
 #include<string>
-#include<queue>
+#include<stack>
 #include<vector>
 
 using namespace std;
 
 int main(void)
 {
-	string temp;
+	
 	vector<string> result;
 
-	while(getline(cin,temp))
-	{ 
-		// 종료조건
-		if (temp == ".")
-		{
-			cout << "YES";
-			break;
-		}
+	string temp;
+	
+	bool check = true;
 
-		queue<char> q1;
-		queue<char> q2;
-		for (auto x : temp)
+	while (getline(cin, temp))
+	{
+		stack<char> s;
+		if ("." == temp) break;
+		check = true;
+		for (char x : temp)
 		{
-			if (x == '(')
+			if ('(' == x) s.push('(');
+			else if (')' == x)
 			{
-				q1.push('(');
-			}
-			else if (x == ')')
-			{
-				if (!q1.size())
+				if (!s.size() || s.top() != '(')
 				{
-
+					s.push(')');
 					break;
 				}
+				s.pop();
 			}
-			if (x == '[')
-			{
 
-			}
-			else if (x == ']')
+			if ('['==x) s.push('[');
+			else if (']' == x)
 			{
-				if (!q2.size())
+				if (!s.size() || s.top() != '[')
 				{
-
+					s.push(']');
 					break;
 				}
+				s.pop();
 			}
-
 		}
+
+		if (!s.size()) result.push_back("yes");
+		else result.push_back("no");
+
 	}
+	
+	for (auto x : result)
+	{
+		cout << x << "\n";
+	}
+
 }
