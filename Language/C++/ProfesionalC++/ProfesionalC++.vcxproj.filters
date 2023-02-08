@@ -4,6 +4,6 @@
     <ClCompile Include="ch02.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="study.md" />
+    <None Include="release.md" />
   </ItemGroup>
 </Project>
