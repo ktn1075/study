@@ -1,11 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Filter Include="ch01">
-      <UniqueIdentifier>{a541a232-9de5-4e39-88c6-dc46940dccd4}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="ch02">
-      <UniqueIdentifier>{a7b2b3d0-b2d4-4b17-b395-8e370271234c}</UniqueIdentifier>
-    </Filter>
+    <ClCompile Include="ch02.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="study.md" />
   </ItemGroup>
 </Project>
