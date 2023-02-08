@@ -31,6 +31,12 @@
 - string_view Class
   : 읽기 전용 스트링을 받는 함수의 매개변수 타입 지정 시 string -> c_str() or data()를 이용하여
     </br> 변환하여 호출해야 한다. 이렇게 하면 helper 함수들과 string 객체지향의 특성을 활용 할 수 없다. 
-    </br> string_view class는 이러한 고민을 해결할 수 있다. string_view는 const string& 대신하 사용 할 수 있으며,
-    </br> 오버헤드도 없다. 스트링을 복사하지 않는다. 
+    </br> string_view class는 이러한 고민을 해결할 수 있다. string_view는 const string& 대신하여 사용 할 수 있으며,
+    </br> --------  스트링을 복사하지 않는다. -> 오버헤드가 없다 (예제 확인)
+    
+- [예제 소스코드 ](https://github.com/ktn1075/study/blob/main/Language/C%2B%2B/ProfesionalC%2B%2B/ch02.cpp)
+     
+</br>
+     
+### Ch03 Coding Style Guide (2023-02-09)
 
