@@ -20,6 +20,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="ch02.cpp" />
+    <ClCompile Include="ch04.cpp" />
   </ItemGroup>
   <ItemGroup>
     <None Include="README.md" />

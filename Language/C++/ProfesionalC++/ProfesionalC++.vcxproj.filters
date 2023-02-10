@@ -2,6 +2,7 @@
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
     <ClCompile Include="ch02.cpp" />
+    <ClCompile Include="ch04.cpp" />
   </ItemGroup>
   <ItemGroup>
     <None Include="README.md" />
