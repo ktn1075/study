@@ -8,7 +8,7 @@
 ### 📗 도서 목록
    - [`API 정복 1,2`]
    - [`코딩테스트를 위한 자료구조와 알고리즘 with C++`]
-   - [`STL 14 철저입문`]
+   - [`전문가를 위한 C++`](https://github.com/ktn1075/study/tree/main/Language/C%2B%2B/ProfesionalC%2B%2B)
    - [`제프리 리처의 WINDOWS VIA C/C++`]
 <br>
 
