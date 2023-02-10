@@ -82,3 +82,56 @@
 </br>
 
 ### Ch04 전문가다운 C++ 프로그램 다지기 (2023-02-10)
+
+- 프로그램 디자인
+  - 요구사항 분석에서 도출한 기능 및 비기능 요구사항을 모두 만족하는 프로그램을 구현하기 위한 구조에 대한 명세서이다.
+    - 프로그램을 구성하는 서브시스템 : 인터페이스와 서브시스템 사이의 의존성, 데이터흐름, 입출력, 기본 스레드 활용모델
+    - 서브시스템별 세부사항 : 클래스 구성, 클래스 계층도, 데이터 구조, 알고리즘, 개별 스레드 활용 모델, 에러처리 방법 
+</br>
+
+- C++ 디자인에 관련된 두 가지 원칙
+  - 추상화 : 구현과 인터페이스 분리의 중요성 , 내부 구현 방식을 이해하지 않아도 코드를 사용 할 수 있다. 
+  ```C+
+    ChessPiece* chessBoard[8][8]; 
+    chessBoard[0][0] = NEW rook();   // 이렇게 사용할 시 사용자는 체스보드의 크기를 항상 알아야 한다.
+    
+    // but
+    class Board
+    {
+      public:
+      void setPieceAt(size_t x, size_t y, ChessPiece* piece);
+      ChessPiece* getPieceAt(size_t x, size_t y);
+      bool isEmpty(size_t x, size_t y);
+    }
+  ```
+ 
+  - 재사용 : 기존 코드를 재사용 할 수있게 클래스, 알고리즘, 데이터 구조들 디자인 해야한다. c++에서는 코드를 범용적으로 만들 수 있도록 템플릭 이라는 기능을 제공한다. 
+  ```C+
+  template <typename PieceType>
+  class GameBoard
+  {
+    public:
+      void setPieceAt(size_t x, size_t y, PieceType* piece)
+      {
+
+      }
+      PieceType* getPieceAt(size_t x, size_t y)
+      {
+
+      }
+      bool isEmpty(size_t x, size_t y) const
+      {
+
+      }
+    };
+    class jangiType{};
+    class ChessType{};
+    GameBoard <ChessType> c;
+    GameBoard <jangiType> j;
+  ```
+  
+- [예제 소스코드 ](https://github.com/ktn1075/study/blob/main/Language/C%2B%2B/ProfesionalC%2B%2B/ch04.cpp)
+
+</br>
+
+### Ch05 객체지향 다지기 (2023-02-11)
