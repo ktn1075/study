@@ -72,7 +72,7 @@
        ```
        pszNAME 에 NULL 이 아닌 '\0' 끝나는 문자열[260] 전달하면 해당 이름의 커널 오브젝트를 생성 할 수 있다.
        
-## 프로세스 (2023-02-13 ~ 2023-02-14)
+## 프로세스 (2023-02-13 ~ 2023-02-15)
 
 - 프로세스 : 실행 중인 프로그램의 인스턴스 즉 프로그램이 실행되어 메모리에 올라간 상태를 프로세스라고 한다
   - 프로세스 컴포넌트
@@ -85,4 +85,53 @@
   - 윈도우 애플리케이션은 애플리케이션이 수행을 시작할 entry point 함수를 반드시 가져야한다. 
     - GUI : ANSI : _tWinMain(), GUI : UNICODE : _tWinMain(wWinMain)
     - CUI : ANSI : _tmain(main), CUI : UNICODE ; _tmain(wmain)
+  - 시작 루틴 
+    - 새로운 프로세스의 전체 명령행을 가리키는 포인터를 획득
+    - 새로운 프로세스의 환경변수를 가리키는 포인터를 획득
+    - C/C++ 런타임 라이브러리의 전역변수를 초기화
+    - C/C++ 런타임 라이브러리의 메모리 할당 함수와 저수준 입출력 루틴이 사용하는 힙을 초기화
+    - 모든 전역 오브젝트와 static C++ 클래스 오브젝트의 생성자 호출
+    - entry point 함수 호출 
+  - 종료 루틴
+    - entry point 함수 리턴 (nMainRetVal) 
+    - exit 함수호출
+      - _onexit 함수를 이용하여 등록해 두었던 함수를 호출
+      - nMainRetval 값을 인자로 하여 ExitProcess 함수를  호출 
+      - 운영체제는 프로세스 종료하고 프로세스 종료 코드를 설정
+  - 프로세스 인스턴스 핸들
+    - 모든 실행 파일과 DLL파일은 프로세스의 메모리 공간 상에 로드될 때 고유의 인스턴스 핸들을 할당 받는다. OS 프로그램들을 구별하기 위한 ID 값
+    - (W)WinMain의 첫 번째 매개변수인 hInstanceExe 를 통해 전달된다.
+    - 핸들 값은 보통 리소스를 로드할 때 사용 된다.
+    - HINSTANCE 자료형은 인스턴스 핸들을 저장할때 사용되며 HMODULE과 완전히 동일하다.
+   ```C++
+      #include<Windows.h>
+      #include <minwindef.h>
+      #include <libloaderapi.h>
+      #include <tchar.h>
+
+      extern "C" const IMAGE_DOS_HEADER __ImageBase;
+
+      void DumpModule()
+      {
+
+	      HMODULE hMoudle = GetModuleHandle(NULL);
+	      _tprintf(TEXT("with GETmoude(null) = 0x%x\r\n"), hMoudle);
+	      _tprintf(TEXT("with IMAGEBASE = 0x%x\r\n"), (HINSTANCE)&__ImageBase);
+
+	      hMoudle = NULL;
+
+	      GetModuleHandleEx(
+		    GET_MODULE_HANDLE_EX_FLAG_FROM_ADDRESS,
+		    (PCTSTR)DumpModule,
+		    &hMoudle);
+
+	      _tprintf(TEXT("get hmoudle = 0x%x\r\n"), hMoudle);
+      }
+
+      int _tmain(int argc, TCHAR* argv[])	
+      {
+	      DumpModule();
+	      return(0);
+      } 
+   ```
     
