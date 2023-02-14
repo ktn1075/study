@@ -104,6 +104,7 @@
     - 핸들 값은 보통 리소스를 로드할 때 사용 된다.
     - HINSTANCE 자료형은 인스턴스 핸들을 저장할때 사용되며 HMODULE과 완전히 동일하다.
    ```C++
+      // 프로세스 내 실행,DLL 시작 주소를 얻기 위한 2가지 방법 
       #include<Windows.h>
       #include <minwindef.h>
       #include <libloaderapi.h>
@@ -113,13 +114,13 @@
 
       void DumpModule()
       {
-
-	      HMODULE hMoudle = GetModuleHandle(NULL);
+	      // GetModuleHandle 함수사용 NULL 인경우 실행파일의 시작주소를 반환 
+	      HMODULE hMoudle = GetModuleHandle(NULL); 
 	      _tprintf(TEXT("with GETmoude(null) = 0x%x\r\n"), hMoudle);
 	      _tprintf(TEXT("with IMAGEBASE = 0x%x\r\n"), (HINSTANCE)&__ImageBase);
 
 	      hMoudle = NULL;
-
+            
 	      GetModuleHandleEx(
 		    GET_MODULE_HANDLE_EX_FLAG_FROM_ADDRESS,
 		    (PCTSTR)DumpModule,
@@ -134,4 +135,6 @@
 	      return(0);
       } 
    ```
-    
+    - 프로세스의 환경변수 
+      - 모든 프로세스는 자기 자신과 연관된 환경블록이 존재한다. 환경블록이란 프로세스의 주소 공간에 할당된 메모리 블록을 의미
+      - 각 문자열의 첫 번째 부분은 환경변수의 이름이고 뒤이어 =가 있고 그다음의로 할당하고자 하는 변수의 값이 나타난다.
