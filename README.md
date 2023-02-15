@@ -10,6 +10,8 @@
    - [`코딩테스트를 위한 자료구조와 알고리즘 with C++`]
    - [`전문가를 위한 C++`](https://github.com/ktn1075/study/tree/main/Language/C%2B%2B/ProfesionalC%2B%2B)
    - [`제프리 리처의 WINDOWS VIA C/C++`](https://github.com/ktn1075/study/tree/main/Language/C%2B%2B/ViaC%2B%2B)
+   - ['윈도우즈 시스템프로그래밍']
+   - ['C#을 다루는 기술']
 <br>
 
 ### 💻 온라인강의
@@ -23,6 +25,8 @@
    - [`무결성 검사 프로그램`](https://github.com/ktn1075/IntegrityCheckService)
    - [`통합로그솔루션`](https://github.com/ktn1075/IntegratedLogSolution)
    - [`랜섬웨어 정상동작 검증 솔루션`]
-   - [`하우리 백신 C++ 포팅`](https://github.com/ktn1075/AntiVirus-porting)
+<br>
 
+### 📝 업무정리 
+   - 정리
 
