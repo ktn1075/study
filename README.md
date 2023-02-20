@@ -9,7 +9,7 @@
    - [`코딩테스트를 위한 자료구조와 알고리즘 with C++`]
    - [`전문가를 위한 C++`](https://github.com/ktn1075/study/tree/main/Language/C%2B%2B/ProfesionalC%2B%2B)
    - [`제프리 리처의 WINDOWS VIA C/C++`](https://github.com/ktn1075/study/tree/main/Language/C%2B%2B/ViaC%2B%2B)
-   - [`윈도우즈 시스템프로그래밍`]
+   - [`OS 공룡책`]
    - [`C#을 다루는 기술`]
 <br>
 
