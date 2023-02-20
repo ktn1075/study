@@ -8,3 +8,4 @@
 
 ![image](https://user-images.githubusercontent.com/37799491/220125567-843b3075-6bea-4c73-a904-ed55f3cbbd20.png)
 
+     - 스레드 상태 : ruuning - suspend - resume - sleep(suspend 상태와 resume 을 한번에 진행)  
