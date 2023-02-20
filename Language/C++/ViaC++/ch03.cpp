@@ -1,0 +1,4 @@
+/*
+	SINGLETON.cpp
+*/
+
