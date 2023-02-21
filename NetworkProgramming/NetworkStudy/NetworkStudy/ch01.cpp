@@ -25,7 +25,7 @@ int main(void)
 {
 	DWORD dwThraedId = 0;
 	// 쓰레드에 전달할 이벤트를 생성한다
-	HANDLE ev = CreateEvent(NULL,FALSE,FALSE,NULL);
+	HANDLE ev = CreateEvent(NULL, FALSE, FALSE, NULL);
 
 	// 쓰레드 생성시 이벤트를 매개변수로 전달한다.
 	HANDLE h = CreateThread(NULL, 0, testThread, ev, 0, &dwThraedId);
@@ -42,7 +42,7 @@ int main(void)
 			ev = NULL;
 		}
 	}
-	
+
 	CloseHandle(h);
 
 	return 0;
