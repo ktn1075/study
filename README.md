@@ -10,7 +10,7 @@
    - [`전문가를 위한 C++`](https://github.com/ktn1075/study/tree/main/Language/C%2B%2B/ProfesionalC%2B%2B)
    - [`제프리 리처의 WINDOWS VIA C/C++`](https://github.com/ktn1075/study/tree/main/Language/C%2B%2B/ViaC%2B%2B)
    - [`OS 공룡책`]
-   - [`C#을 다루는 기술`]
+   - [`C#을 다루는 기술`](https://github.com/ktn1075/study/tree/main/OS)
    - [`Qt4 를 이용한 C++ GUI 프로그래밍`]
 <br>
 
