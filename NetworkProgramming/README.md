@@ -23,4 +23,4 @@
     - UserMode 에서는 스트림,  KernelMode TCP - 세그먼트,  IP - 패킷 단위,  
 
 ## 4일차 (2023-02-24)
-  1. 간단한 FTp Server-Client 제작 
+  1. 간단한 Ftp Server-Client 제작 
