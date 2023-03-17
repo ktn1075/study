@@ -28,6 +28,6 @@
    - [`업무협업툴`](https://github.com/ktn1075/workshareS)
 <br>
 
-### 📝 
+### 📝 개발일지
    - [`정리`](https://ktn1075.tistory.com/)
 
