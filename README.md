@@ -29,5 +29,5 @@
 <br>
 
 ### 📝 개발일지
-   - [`정리`](https://github.com/ktn1075/study/DevelopmentDiary)
+   - [`정리`](https://github.com/ktn1075/study/tree/main/DevelopmentDiary)
 
