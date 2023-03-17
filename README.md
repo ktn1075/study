@@ -29,5 +29,5 @@
 <br>
 
 ### 📝 개발일지
-   - [`정리`](https://ktn1075.tistory.com/)
+   - [`정리`](https://github.com/ktn1075/study/DevelopmentDiary)
 
