@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -47,6 +48,15 @@ namespace Ch05
 
             dome();
             GC.Collect();
+
+
+            // using 사용해서 무조건 Dispose 호출 되도록 수정 
+            using (FileLogger f = new FileLogger("x"))
+            {
+
+
+            }
+
         }
         private static void dome()
         {
@@ -72,5 +82,48 @@ namespace Ch05
             GC.Collect();
         }
 
+        private static void FileCreate()
+        {
+            FileStream fs = new FileStream("test", FileMode.Create);
+            fs.Dispose();
+        }
+
+    }
+
+    class FileLogger : IDisposable
+    {
+        FileStream _fs;
+
+        public FileLogger(string filename)
+        {
+            _fs =new FileStream(filename, FileMode.Create); 
+        }
+
+        public void Dispose()
+        {
+            Console.WriteLine( "dispose 호출 ");
+            _fs.Close();                
+        }
+    }
+
+
+    class FileLogger2 
+    {
+        FileStream _fs;
+
+        public FileLogger2(string filename)
+        {
+            _fs = new FileStream(filename, FileMode.Create);
+        }
+
+        ~FileLogger2 ()
+        {
+            _fs.Dispose();
+        }
+
+        public void Dispose()
+        {
+            _fs.Close();
+        }
     }
 }
