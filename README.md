@@ -8,8 +8,8 @@
    - [`API 정복 1,2`]
    - [`전문가를 위한 C++`](https://github.com/ktn1075/study/tree/main/Language/C%2B%2B/ProfesionalC%2B%2B)
    - [`제프리 리처의 WINDOWS VIA C/C++`](https://github.com/ktn1075/study/tree/main/Language/C%2B%2B/ViaC%2B%2B)
-   - [`시작하세요 C# 10 프로그래밍`]
-   - [`C#을 다루는 기술`](https://github.com/ktn1075/study/tree/main/Language/C%23/C%2310)
+   - [`시작하세요 C# 10 프로그래밍`](https://github.com/ktn1075/study/tree/main/Language/C%23/C%2310)
+   - [`C#을 다루는 기술`]
    - [`Qt4 를 이용한 C++ GUI 프로그래밍`]
 <br>
 
