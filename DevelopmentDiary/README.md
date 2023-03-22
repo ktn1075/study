@@ -10,4 +10,4 @@
 
 3. [`현재 설치 된 프로그램 리스트 가져오기 (2023-03-21 ~ 22)`](https://ktn1075.tistory.com/43)
    - 레지스트리를 값을 활용해 현재 설치된 프로그램 리스트 가져오기 
-   - [`source`] (https://github.com/ktn1075/study/tree/main/DevelopmentDiary/InstalledProgramList)
+   - [`source`](https://github.com/ktn1075/study/tree/main/DevelopmentDiary/InstalledProgramList)
