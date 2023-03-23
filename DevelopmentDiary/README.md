@@ -12,5 +12,5 @@
    - 레지스트리를 값을 활용해 현재 설치된 프로그램 리스트 가져오기 
    - [`source`](https://github.com/ktn1075/study/tree/main/DevelopmentDiary/InstalledProgramList)
    
-4. [`C#의 3가지 Timer (2023-03-23)`]()
+4. [`C#의 3가지 Timer (2023-03-23)`](https://ktn1075.tistory.com/44)
    - [`source`]
