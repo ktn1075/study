@@ -12,5 +12,15 @@
    - 레지스트리를 값을 활용해 현재 설치된 프로그램 리스트 가져오기 
    - [`source`](https://github.com/ktn1075/study/tree/main/DevelopmentDiary/InstalledProgramList)
    
-4. [`C#의 3가지 Timer (2023-03-23)`](https://ktn1075.tistory.com/44)
-   - [`source`]
+4. [`C#의 3가지 Timer (2023-03-23 ~ 2023-03-24)`](https://ktn1075.tistory.com/44)
+    - 싱글쓰레드 Timer
+    - 멀티쓰레드 Timer 
+   - [`source`](https://github.com/ktn1075/study/tree/main/DevelopmentDiary/TimerStudy)
+   
+5. [`다양한 윈도우 정보 가져오기 python and c# (2023-03-25 ~ 2023-03-28)`]
+   - 윈도우 이벤트로그
+   - 실행중인 프로세스 리스트
+   - 윈도우 그룹 정책
+   - SystemInfo 
+   - 네트워크 상태 
+   - 프린터 드라이버 및 프린터 목록
