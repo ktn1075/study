@@ -10,7 +10,7 @@ namespace InstalledProgramList
 {
     internal class Program
     {
-        static List<string> _installedList = new List<string>();
+        static Dictionary<string, string> _installedList = new Dictionary<string, string>();
 
         static void Main(string[] args)
         {
@@ -44,9 +44,11 @@ namespace InstalledProgramList
             foreach (String keyName in key.GetSubKeyNames())
             {
                 RegistryKey subkey = key.OpenSubKey(keyName);
-                string dp = subkey.GetValue("DisplayName") as string;
-                if (dp != null) 
-                { _installedList.Add(dp); }
+                // 디스플레이 이름이 없는 경우도 존재한다. 그리고 32,64 bit 중복되어 키저장되어 있는게 몇개있다.
+                string dp = subkey.GetValue("DisplayName").ToString() ?? keyName;
+                string installDate = subkey.GetValue("EstimatedSize").ToString() ?? "unKnown";
+                
+                _installedList.Add(dp,installDate);
             }
         }
     }
