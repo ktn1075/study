@@ -17,7 +17,7 @@
     - 멀티쓰레드 Timer 
    - [`source`](https://github.com/ktn1075/study/tree/main/DevelopmentDiary/TimerStudy)
    
-5. [`다양한 윈도우 정보 가져오기 python and c# (2023-03-25 ~ 2023-03-28)`]
+5. [`다양한 윈도우 정보 가져오기 python and c# (2023-03-25 ~ 2023-03-28)`](https://ktn1075.tistory.com/46)
    - 윈도우 이벤트로그
    - 실행중인 프로세스 리스트
    - 윈도우 그룹 정책
