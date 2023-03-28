@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
@@ -78,7 +79,11 @@ namespace Ch06
 
             Console.WriteLine(st3.ElapsedMilliseconds);
 
-            exRegex();
+            // exRegex();
+
+
+            exCollection();
+
         }
 
         static void exEncdoing()
@@ -98,6 +103,48 @@ namespace Ch06
             bool t = regex.IsMatch(email);
            
             if (t) { Console.WriteLine("이메일"); }
+        }
+
+
+        static void exCollection()
+        {
+
+            ArrayList ar = new ArrayList();
+            ar.Add("hello");
+            ar.Add(15);
+
+            if(ar.Contains(15))
+            {
+                Console.WriteLine("존재");
+            }
+
+            ar.Remove(15);
+
+            // Hashtable
+
+            Hashtable ht = new Hashtable();
+
+            ht.Add("key",10);
+
+            Console.WriteLine(ht["key"]);
+
+            // SortedList
+
+            SortedList sl =new SortedList();
+
+            sl.Add(5,10);
+            sl.Add(3, 12);
+            sl.Add(4, 15);
+
+            foreach (var item in sl.GetKeyList())
+            {
+                Console.WriteLine(sl[item]);
+            }
+
+            // stack 
+
+
+
         }
     }
 }
