@@ -23,5 +23,5 @@
    - 윈도우 그룹 정책
    - SystemInfo 
    - 네트워크 상태 
-   - 프린터 드라이버 및 프린터 목록
+   - 프린터 드라이버 및 프린터 목록 [`soruce`](https://github.com/ktn1075/study/tree/main/DevelopmentDiary/PrinterInfo)
   
