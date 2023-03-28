@@ -143,6 +143,26 @@ namespace Ch06
 
             // stack 
 
+            Stack st = new Stack();
+
+            st.Push("hello");
+            st.Push("hello2");
+
+            var test22 = st.Pop();
+
+            Console.WriteLine(test22);
+
+
+            // queue 
+
+            Queue q =   new Queue();
+
+            q.Enqueue("hello1");
+            q.Enqueue("hello2");
+            
+            var test33 = q.Dequeue();
+
+            Console.WriteLine(test33);
 
 
         }
