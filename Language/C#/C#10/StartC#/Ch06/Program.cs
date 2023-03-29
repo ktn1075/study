@@ -99,14 +99,6 @@ namespace Ch06
             }
             // 파일 복사
             File.Copy("test.log",@"C\test.log",true);
-
-            // 특정 
-            string targetDirectory = Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData)
-            
-            Directory
-
-
-
         }
 
         static void exEncdoing()
