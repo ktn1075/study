@@ -25,3 +25,5 @@
    - 네트워크 상태 
    - 프린터 드라이버 및 프린터 목록 [`soruce`](https://github.com/ktn1075/study/tree/main/DevelopmentDiary/PrinterInfo)
   
+6. [`윈도우 SpecialFolder 가져오기 C# (2023-03-29)`](https://ktn1075.tistory.com/48)
+  
