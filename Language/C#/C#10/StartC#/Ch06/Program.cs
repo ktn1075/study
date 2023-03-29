@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Diagnostics;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
@@ -83,6 +84,28 @@ namespace Ch06
 
 
             exCollection();
+
+        }
+
+        static void exFile()
+        {
+            // 간단한 파일 처리 
+            using (FileStream fs = new FileStream("test.log", FileMode.Create))
+            {
+                StreamWriter sw = new StreamWriter(fs, Encoding.UTF8);
+                sw.WriteLine("hello word");
+                sw.Write(32000);
+                sw.Flush(); 
+            }
+            // 파일 복사
+            File.Copy("test.log",@"C\test.log",true);
+
+            // 특정 
+            string targetDirectory = Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData)
+            
+            Directory
+
+
 
         }
 
