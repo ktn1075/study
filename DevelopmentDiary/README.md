@@ -29,3 +29,4 @@
    - [`source`](https://github.com/ktn1075/study/tree/main/DevelopmentDiary/FileLog)
 
 7. [`c# Delegate (2023-03-30)`](https://ktn1075.tistory.com/49)
+   - [`source`](https://github.com/ktn1075/study/tree/main/DevelopmentDiary/ExEelegate)
