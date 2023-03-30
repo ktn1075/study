@@ -28,4 +28,4 @@
 6. [`윈도우 SpecialFolder 가져오기 C# (2023-03-29)`](https://ktn1075.tistory.com/48)
    - [`source`](https://github.com/ktn1075/study/tree/main/DevelopmentDiary/FileLog)
 
-7. [`c# async-await (2023-03-30)`]()
+7. [`c# Delegate (2023-03-30)`](https://ktn1075.tistory.com/49)
