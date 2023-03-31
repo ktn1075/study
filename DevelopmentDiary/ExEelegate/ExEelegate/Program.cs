@@ -25,6 +25,11 @@ namespace ExEelegate
             return int.Parse(x)+2;
         }
 
+        public static void test3(string x)
+        {
+            Console.WriteLine(x);
+        }
+
         static void Main(string[] args)
         {
             DETEST dETEST = test1;
@@ -44,6 +49,36 @@ namespace ExEelegate
                 int ret = f("10");
                 Console.WriteLine(ret);
             }
+
+            // Action<> 
+
+            Action<string> testAction = test3;
+            testAction += (string x) => Console.WriteLine(x);
+
+            testAction.Invoke("tes4");
+
+            // Func<> 
+
+            Func<string, string> testFunc = (string x) =>
+            {
+                string a= x + "정상동작";
+
+                Console.WriteLine(a);
+
+                return a;
+            };
+
+            string b = testFunc.Invoke("10");
+
+            // Predicate<>
+
+            Predicate<string> testPredicate = (string x) =>
+            {
+                Console.WriteLine(x + "predicate");
+                return true;
+            };
+
+            testPredicate.Invoke("111");
         }
-    }
+    } 
 }
