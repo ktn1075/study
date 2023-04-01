@@ -32,5 +32,5 @@
    - [`source`](https://github.com/ktn1075/study/tree/main/DevelopmentDiary/ExEelegate)
   
   
-8. [`c# Invoke (2023-04-01)](https://ktn1075.tistory.com/50)
+8. [`c# Invoke (2023-04-01)`](https://ktn1075.tistory.com/50)
    - [`source`]
