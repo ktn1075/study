@@ -30,3 +30,7 @@
 
 7. [`c# Delegate (2023-03-30 ~ 2023-03-31)`](https://ktn1075.tistory.com/49)
    - [`source`](https://github.com/ktn1075/study/tree/main/DevelopmentDiary/ExEelegate)
+  
+  
+8. [`c# Invoke (2023-04-01)](https://ktn1075.tistory.com/50)
+   - [`source`]
