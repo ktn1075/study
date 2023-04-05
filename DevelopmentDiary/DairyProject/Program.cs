@@ -22,6 +22,8 @@ namespace AwaitAsync
          
         static async void test1()
         {
+            Console.WriteLine(Thread.CurrentThread.ManagedThreadId);
+
             var task1 = Task.Run(() => test12());
 
             await task1.ConfigureAwait(false);
