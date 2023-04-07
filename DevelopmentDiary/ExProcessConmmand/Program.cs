@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
+using System.Management;
 using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
@@ -10,26 +11,54 @@ namespace ExProcessConmmand
 {
     internal class Program
     {
+        static Dictionary<string,string> _processInfo = new Dictionary<string, string>();
 
         static void Main(string[] args)
         {
+            Stopwatch sw = Stopwatch.StartNew();
+
+            sw.Start();
+
+            CommandLineWmi();
+
             StringBuilder sb = new StringBuilder();
 
             foreach (Process process in Process.GetProcesses())
             {
-                string cmd;
-                int rc = GetCommandLine(process, out cmd);
+                string cmd = "";
+                //int rc = GetCommandLine(process, out cmd);
 
-                if (rc != 0)
-                    Console.WriteLine(rc);
+                cmd = _processInfo[process.Id.ToString()];
 
                 sb.Append($"{process.ProcessName,-60}{process.Id,-10}{process.SessionId,-5}{process.WorkingSet64 / 1000 + "kb",-10}");
                 sb.AppendLine($"{cmd,-100}");
             }
 
-            Console.WriteLine( sb.ToString() ); 
+            Console.WriteLine( sb.ToString() );
+
+            sw.Stop();
+            
+            Console.WriteLine( sw.ElapsedMilliseconds);
         }
 
+        public static void CommandLineWmi()
+        {
+            using
+            (
+                ManagementObjectSearcher searcher = new ManagementObjectSearcher
+                (
+                    "SELECT ProcessId,CommandLine FROM Win32_Process"
+                )
+            )
+                foreach (ManagementObject obj in searcher.Get())
+                {
+
+                    string processid = obj["ProcessId"].ToString() as string; 
+                    string commandLine = obj["CommandLine"] as string;
+
+                    _processInfo[processid] = commandLine;
+                }
+        }
 
         [DllImport("kernel32.dll", SetLastError = true)]
         [return: MarshalAs(UnmanagedType.Bool)]
