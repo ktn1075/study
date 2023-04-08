@@ -47,4 +47,6 @@
 12. [`실행중인 프로세스 명령줄 가져오기 (2023-04-05 ~ 2023-04-06)`](https://ktn1075.tistory.com/54)
    - [`source`](https://github.com/ktn1075/study/tree/main/DevelopmentDiary/DairyProject)
    
-13. [` WoW64 (2023-04-08)`](https://ktn1075.tistory.com/55)
+13. [` WoW64 (2023-04-08)`]
+   - [`64비트와 32비트 호환 WoW64(Window 32 On Window 64)(1)`](https://ktn1075.tistory.com/55)
+   - [`64비트와 32비트 호환 WoW64(Window 32 On Window 64)(2)` ]
