@@ -6,6 +6,7 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace Ch06
@@ -14,7 +15,7 @@ namespace Ch06
     {
         static void Main(string[] args)
         {
-            //DateTime 
+            /*
             DateTime endofYear = new DateTime(DateTime.Now.Year, 12, 31);
             DateTime now = DateTime.Now;
 
@@ -41,10 +42,6 @@ namespace Ch06
             string txt = "hello {0}:{1}";
             Console.WriteLine(txt, "world", "aderson");
 
-            /* stringbulider
-             *  txt2 변수는 helloworld 가르키고 그 상태에서 tolower 호출하면 txt2 변수에 담긴 문자열이 소문자로 변경되는것이
-             *  원문이 통째로 복사된 다음 그것이 소문자로 변경되어 반환되는 절차를 거친다.
-             */
             string txt2 = "hello world";
             string format = txt2.ToLower();
 
@@ -84,6 +81,9 @@ namespace Ch06
 
 
             exCollection();
+            */
+
+            exThread();
 
         }
 
@@ -178,8 +178,27 @@ namespace Ch06
             var test33 = q.Dequeue();
 
             Console.WriteLine(test33);
+        }
 
+        static void exThread()
+        {
+            Console.WriteLine("exThread" + ":" + Environment.CurrentManagedThreadId);
 
+            Thread t1 = new Thread(thread1test);
+            t1.Start("test1");
+
+            Thread t2 = new Thread(thread1test);
+            t2.IsBackground = true;
+            t2.Start("test2");
+
+        }
+
+        static void thread1test(object initValue)
+        {
+            Thread.Sleep(2000);
+            string x = initValue as string;
+            
+            Console.WriteLine(x+":"+ Environment.CurrentManagedThreadId);
         }
     }
 }
