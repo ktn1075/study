@@ -51,5 +51,8 @@
    - [`64비트와 32비트 호환 WoW64(Window 32 On Window 64)(1)`](https://ktn1075.tistory.com/55)
    - [`64비트와 32비트 호환 WoW64(Window 32 On Window 64)(2)` ]
 
-14. [`Nlog 사용 (2023-04-10)`]()
+14. [`Nlog 사용 (2023-04-10)`](https://ktn1075.tistory.com/56)
+   - [`source`]()
+
+14. [`Nlog 옵션화 (2023-04-11)`](https://ktn1075.tistory.com/57)
    - [`source`]()
