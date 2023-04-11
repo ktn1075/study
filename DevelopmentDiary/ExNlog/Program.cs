@@ -1,4 +1,7 @@
-﻿using System;
+﻿using NLog;
+using NLog.Config;
+using NLog.Targets;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -13,6 +16,25 @@ namespace ExNlog
 
         static void Main(string[] args)
         {
+
+#if (DEBUG)
+
+            var config = new LoggingConfiguration();
+
+            var consoleTarget = new ColoredConsoleTarget();
+
+            config.AddTarget("console", consoleTarget);
+
+            consoleTarget.Layout = @"${logger} ${message}";
+
+            var rule1 = new LoggingRule("*", LogLevel.Debug, consoleTarget);
+
+            config.LoggingRules.Add(rule1);
+
+            LogManager.Configuration = config;
+
+
+#endif
             while (true)
             {
                 Thread.Sleep(500);
