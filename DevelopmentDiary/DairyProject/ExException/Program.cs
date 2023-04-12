@@ -16,7 +16,8 @@ namespace ExException
             {
                 //test1;
                 //test2();
-                test3();
+                //test3();
+                test4();
             }
             catch (Exception e)
             {
@@ -46,7 +47,7 @@ namespace ExException
             try
             {
                 throw new Exception("tttttttttttt222");
-                await Task.Run(() => { throw new Exception("tttttttttttttttttttttt"); });
+                await Task.Run(() => { Console.WriteLine("test2"); });
             }
             catch (Exception e) 
             {
@@ -56,6 +57,12 @@ namespace ExException
         static void test3()
         {
             throw new Exception("error");
+        }
+
+        static async Task test4()
+        {
+            throw new Exception("ttt4");
+            await Task.Run(() => { Console.WriteLine("test4"); });
         }
     }
 }
