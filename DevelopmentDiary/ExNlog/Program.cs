@@ -3,6 +3,7 @@ using NLog.Config;
 using NLog.Targets;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading;
@@ -18,6 +19,7 @@ namespace ExNlog
         {
 
 #if (DEBUG)
+            // App.config 설정을 없애고 해당 설정으로 바꿔준다
 
             var config = new LoggingConfiguration();
 
