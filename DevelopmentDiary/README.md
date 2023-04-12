@@ -54,5 +54,8 @@
 14. [`Nlog 사용 (2023-04-10)`](https://ktn1075.tistory.com/56)
    - [`source`](https://github.com/ktn1075/study/tree/main/DevelopmentDiary/ExNlog)
 
-14. [`Nlog 옵션화 (2023-04-11)`](https://ktn1075.tistory.com/57)
+15. [`Nlog 옵션화 (2023-04-11)`](https://ktn1075.tistory.com/57)
    - [`source`](https://github.com/ktn1075/study/tree/main/DevelopmentDiary/ExNlog)
+   
+16. [`async Exception (2023-04-12)`](https://ktn1075.tistory.com/58)
+   - [`source`] 
