@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
@@ -18,6 +19,8 @@ namespace ExException
                 //test2();
                 //test3();
                 test4();
+
+                
             }
             catch (Exception e)
             {
@@ -61,8 +64,15 @@ namespace ExException
 
         static async Task test4()
         {
-            throw new Exception("ttt4");
-            await Task.Run(() => { Console.WriteLine("test4"); });
+            try
+            {
+                throw new Exception("ttt2222222222222224");
+                await Task.Run(() => { Console.WriteLine("test4"); });
+            }
+            catch(Exception e)
+            {
+                ;
+            }
         }
     }
 }
