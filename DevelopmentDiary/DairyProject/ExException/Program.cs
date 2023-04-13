@@ -15,10 +15,10 @@ namespace ExException
             Console.WriteLine(Environment.CurrentManagedThreadId);
             try
             {
-                //test1;
+                test1();
                 //test2();
                 //test3();
-                test4();
+                //test4();
 
                 
             }
@@ -38,9 +38,7 @@ namespace ExException
         {
             Console.WriteLine(Environment.CurrentManagedThreadId);
 
-            throw new Exception("tttttttttttttttttttttt");
-
-            await Task.Run(() => { Console.WriteLine("test");});
+            await Task.Run(() => { throw new Exception("tttttttttttttttttttttt"); });
 
             Console.WriteLine(Environment.CurrentManagedThreadId);
 
