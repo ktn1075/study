@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading;
@@ -83,8 +84,8 @@ namespace Ch06
             exCollection();
             */
 
-            exThread();
-
+            //exThread();
+            reflection();
         }
 
         static void exFile()
@@ -200,5 +201,36 @@ namespace Ch06
             
             Console.WriteLine(x+":"+ Environment.CurrentManagedThreadId);
         }
+
+        static void reflection()
+        {
+            AppDomain currentDomain = AppDomain.CurrentDomain;
+            Console.WriteLine("Current Domain Name : " + currentDomain.FriendlyName);
+            foreach (Assembly asm in currentDomain.GetAssemblies())
+            {
+                Console.WriteLine($"{asm.FullName}");
+
+                foreach(var module in asm.GetModules())
+                { 
+                    Console.WriteLine(module.Name); 
+
+                    foreach(var type in module.GetTypes())
+                    {
+                        Console.WriteLine(type.FullName);
+                    }
+                }
+
+                foreach (var type in asm.GetTypes())
+                {
+
+                    foreach(MethodInfo method in type.GetMethods())
+                    {
+                        Console.WriteLine(" method : "+method.Name);
+                    }
+
+                }
+            }
+        }
+
     }
 }
