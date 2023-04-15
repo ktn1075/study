@@ -5,13 +5,16 @@ using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Reflection;
+using System.Runtime.Remoting;
 using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading;
 using System.Threading.Tasks;
+using NLog.Targets;
 
 namespace Ch06
 {
+    
     internal class Program
     {
         static void Main(string[] args)
@@ -85,7 +88,9 @@ namespace Ch06
             */
 
             //exThread();
-            reflection();
+            // reflection();
+
+            ExAppDomain();
         }
 
         static void exFile()
@@ -230,6 +235,26 @@ namespace Ch06
 
                 }
             }
+        }
+
+        static void ExAppDomain()
+        {
+            AppDomain newApp = AppDomain.CreateDomain("My2Appdomain");
+
+            string dllPath = @"C:\Users\ktn10\Desktop\공부\Language\C#\C#10\StartC#\Ch06\bin\Debug\NLog.dll";
+
+            var test = AssemblyName.GetAssemblyName(dllPath);
+
+            ObjectHandle objectHandle = newApp.CreateComInstanceFrom(dllPath, "NLog.Targets.NetworkTarget");
+
+            Console.WriteLine("엔터키를 치시기 전까지 파일을 지울수 없습니다");
+
+            Console.ReadLine();
+
+            AppDomain.Unload(newApp);
+
+            Console.WriteLine("지우기 가능");
+
         }
 
     }
