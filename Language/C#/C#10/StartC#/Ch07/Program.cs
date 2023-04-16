@@ -14,7 +14,34 @@ namespace Ch07
 
         }
 
-
-
+        static void ExGeneriy()
+        {
+            List<string> strings = new List<string>();
+            List<int> ints = new List<int>();
+        
+          ints.Add(1);
+        
+        }
     }
+
+    public class SStack<T>
+    {
+        T[] _objs;
+        int _pos;
+
+        public SStack(int size) { _objs = new T[size]; }
+
+        public void Push(T newValue)
+        {
+            _objs[_pos] = newValue;
+            _pos++;
+        }
+
+        public T Pop()
+        {
+            _pos--;
+            return _objs[_pos];
+        }
+    }
+
 }
