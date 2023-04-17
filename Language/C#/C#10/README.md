@@ -23,7 +23,8 @@
    - [`source`](https://github.com/ktn1075/study/tree/main/Language/C%23/C%2310/StartC%23/Ch06)
 
 3. [`Ch07 (2023-04-15 ~ 2023-04-18)`] 
-   - [`제네릭`](https://ktn1075.tistory.com/58)
+   - [`제네릭1`](https://ktn1075.tistory.com/58)
+   - [`제네릭2`](https://ktn1075.tistory.com/59)
    - ?? 연산자
    - default 예약어
    - yield retrun/break
@@ -31,4 +32,4 @@
    - null able
    - 익명 메서드
    - static 클래스
-   -[`source`](https://github.com/ktn1075/study/tree/main/Language/C%23/C%2310/StartC%23/Ch07)
+   - [`source`](https://github.com/ktn1075/study/tree/main/Language/C%23/C%2310/StartC%23/Ch07)
