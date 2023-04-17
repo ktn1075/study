@@ -32,4 +32,4 @@
    - null able
    - 익명 메서드
    - static 클래스
-   -[`source`](https://github.com/ktn1075/study/tree/main/Language/C%23/C%2310/StartC%23/Ch07)
+   - [`source`](https://github.com/ktn1075/study/tree/main/Language/C%23/C%2310/StartC%23/Ch07)
