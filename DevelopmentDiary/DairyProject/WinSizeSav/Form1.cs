@@ -17,15 +17,7 @@ namespace WinSizeSav
         public Form1()
         {
             InitializeComponent();
-        }
-
-        private void Form1_Resize(object sender, EventArgs e)
-        {
-            
-            if (this.WindowState == FormWindowState.Minimized)
-            {
-                bounds = this.Size;
-            }
+            bounds = this.Size;
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -37,5 +29,6 @@ namespace WinSizeSav
         {
             bounds = this.Size;
         }
+
     }
 }
