@@ -61,4 +61,4 @@
    - [`source`](https://github.com/ktn1075/study/tree/main/DevelopmentDiary/DairyProject/ExException)
 
 17. [`현재 윈도우 창 사이즈 기억하기 (2023-04-18)`](https://ktn1075.tistory.com/60)
-   - [`source`]
+   - [`source`](https://github.com/ktn1075/study/tree/main/DevelopmentDiary/DairyProject/WinSizeSav)
