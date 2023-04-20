@@ -65,3 +65,8 @@
    
 18. [`익명 타입 (2023-04-19)`](https://ktn1075.tistory.com/61)
    - [`source`]
+   
+19. [`Dynamic 타입(2023-04-20)`](https://ktn1075.tistory.com/62)
+   - [`source`]   
+20. [`ZeroMq (2023-04-21 ~ 2023-04-24)`](https://ktn1075.tistory.com/64)
+   - [`source`]   
