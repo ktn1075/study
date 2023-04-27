@@ -64,7 +64,7 @@
    - [`source`](https://github.com/ktn1075/study/tree/main/DevelopmentDiary/DairyProject/WinSizeSav)
    
 18. [`익명 타입 (2023-04-19)`](https://ktn1075.tistory.com/61)
-   - [`source`]
+   - [`source`](https://github.com/ktn1075/study/tree/main/DevelopmentDiary/DairyProject/ExAnonymous)
    
 19. [`Dynamic 타입(2023-04-20)`](https://ktn1075.tistory.com/62)
    - [`source`](https://github.com/ktn1075/study/tree/main/DevelopmentDiary/DairyProject/ExDynamic)
