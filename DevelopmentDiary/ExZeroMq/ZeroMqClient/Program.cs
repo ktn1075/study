@@ -11,9 +11,7 @@ namespace ZeroMqClient
     {
         static void Main(string[] args)
         {
-            Sub sub = new Sub("tcp://127.0.0.1:55545", "Even");
-
-            sub.setSubScriberName("Even");
+            Sub sub = new Sub("tcp://127.0.0.1:55545", "서울시:성북구");
 
             Thread t1 = new Thread(sub.listen);
  

@@ -18,7 +18,6 @@ class Pub
         return data.ToUpper();
     }
 
-
     public void Start()
     {
         System.Console.WriteLine("Pub start");
@@ -35,14 +34,10 @@ class Pub
             {
                 string update = "x";
 
-                if (counter % 2 ==0)
-                {
-                    update = string.Format("{0} {1}","Even", "Message"+ counter);
-                }
-                else
-                {
-                    update = string.Format("{0} {1}", "Odd", "Message " + counter);
-                }
+                update = string.Format("{0} {1}","서울시:종로구", "Message"+ counter);
+
+
+
 
                 using (var updateFrame = new ZFrame(update))
                 {
