@@ -82,4 +82,4 @@
 23. [`시퀀스 다이어 그램(2023-05-10 ~ -05-12)`](https://ktn1075.tistory.com/66)
 24. [`구글스타일 가이드(2023-05-11 ~ 05-15)`]
    - 해당 내요은 개인 노션 페이지 링크예정 
-26. [`Exception 처리 (2023-05-11)`](https://ktn1075.tistory.com/67)
+26. [`Exception 처리 (2023-05-11)`](https://ktn1075.tistory.com/67)](https://www.notion.so/somansa-vdic/905496aae2b64572b90a3526dae4e001)
