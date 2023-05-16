@@ -81,5 +81,7 @@
    - 지라 : 개발자라면 최고의 애자일 Tool
 23. [`시퀀스 다이어 그램(2023-05-10 ~ -05-12)`](https://ktn1075.tistory.com/66)
 24. [`구글스타일 가이드(2023-05-11 ~ 05-15)`](https://www.notion.so/somansa-vdic/905496aae2b64572b90a3526dae4e001)
-   - 해당 내요은 개인 노션 페이지 링크예정 
+   - c# (MS)
+   - Pyhton (Google, PE8)
 26. [`Exception 처리 (2023-05-11)`]
+   - 병렬 처리 시 Exception
