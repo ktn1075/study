@@ -25,7 +25,6 @@
    - [`ImageTagParsingServer`](https://github.com/ktn1075/ImageTagParsingServer)
    - [`무결성 검사 프로그램`](https://github.com/ktn1075/IntegrityCheckService)
    - [`통합로그솔루션`](https://github.com/ktn1075/IntegratedLogSolution)
-   - [`랜섬웨어 정상동작 검증 솔루션`](https://github.com/ktn1075/RansomwareVerification)
    - [`업무협업툴`](https://github.com/ktn1075/workshareS)
    - [`날씨 구독 서버`](https://github.com/ktn1075/weatherPubSub)
 <br>
