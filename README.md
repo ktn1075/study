@@ -9,14 +9,10 @@
    - [`전문가를 위한 C++`](https://github.com/ktn1075/study/tree/main/Language/C%2B%2B/ProfesionalC%2B%2B)
    - [`제프리 리처의 WINDOWS VIA C/C++`](https://github.com/ktn1075/study/tree/main/Language/C%2B%2B/ViaC%2B%2B)
    - [`시작하세요 C# 10 프로그래밍`](https://github.com/ktn1075/study/tree/main/Language/C%23/C%2310)
-   - [`C#을 다루는 기술`]
-   - [`Qt4 를 이용한 C++ GUI 프로그래밍`]
-   - [`실전 윈도우 디바이스 드라이버 2/e`]
+   - [`C#을 다루는 기술`](https://github.com/ktn1075/study/tree/main/Language/C%23/C%23%EC%9D%84%20%EB%8B%A4%EB%A3%A8%EB%8A%94%20%EA%B8%B0%EC%88%A0)
 <br>
 
 ### 💻 온라인강의
-   - [`인프런 : C++과 언리얼로 만드는 MMORPG 게임 개발 시리즈 PART4 - 게임서버`]
-   - [`인프런 : C++과 언리얼로 만드는 MMORPG 게임 개발 시리즈 PART3 - 자료구조와 알고리즘`]
    - [`윈도우-소켓-입문-고성능-서버`](https://github.com/ktn1075/study/tree/main/NetworkProgramming)
 <br>
 
