@@ -22,7 +22,6 @@
    - [`무결성 검사 프로그램`](https://github.com/ktn1075/IntegrityCheckService)
    - [`통합로그솔루션`](https://github.com/ktn1075/IntegratedLogSolution)
    - [`업무협업툴`](https://github.com/ktn1075/workshareS)
-   - [`날씨 구독 서버`](https://github.com/ktn1075/weatherPubSub)
 <br>
 
 ### 📝 개발일지
